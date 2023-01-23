@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StorageAPI_Manjula", "StorageAPI_Manjula\StorageAPI_Manjula.csproj", "{BF0C0C28-897B-4F63-99E3-7E4672F14BAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF0C0C28-897B-4F63-99E3-7E4672F14BAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF0C0C28-897B-4F63-99E3-7E4672F14BAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF0C0C28-897B-4F63-99E3-7E4672F14BAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF0C0C28-897B-4F63-99E3-7E4672F14BAB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6C738CA9-6D7C-42F1-B186-10A6011CF853}
+	EndGlobalSection
+EndGlobal
