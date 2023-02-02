@@ -27,21 +27,16 @@ namespace StorageAPI_Manjula.Controllers
 
         [Route("InsertFile")]
         [HttpPost]
-        public async Task<bool> InsertFile(string localFilePath)
+        public async Task<bool> InsertFile(IFormFile files)
         //[FromForm] IFormFile asset)
         {
-            string fileName = Path.GetFileName(localFilePath);
-            FileStream stream = new FileStream(localFilePath, FileMode.Open, FileAccess.Read);
-            if (stream.Length > 0)
+            if (files != null)
             {
-                // if (asset != null)
-                //{
-                //  Stream stream = asset.OpenReadStream();
-                await _storage.UploadDocument(_connectionString, _container, fileName, stream);
+                await _storage.UploadDocument(_connectionString, _container, files.FileName, files.OpenReadStream());
                 return true;
             }
-
-            return false;
+            else
+                return false;
         }
 
         [HttpGet("DownloadFile/{fileName}")]
