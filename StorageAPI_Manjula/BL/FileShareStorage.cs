@@ -30,13 +30,13 @@ namespace StorageAPI_Manjula.BL
                 {
                     // Get a reference to a file and upload it
                     ShareFileClient file = directory.GetFileClient(filename);
-                    if (await file.ExistsAsync())
-                    {
+                   // if (await file.ExistsAsync())
+                   // {
                         file.Create(fileContent.Length);
                         await file.UploadRangeAsync(
                             new HttpRange(0, fileContent.Length),
                             fileContent);
-                    }
+                    //}
                 }
                 else
                 {
